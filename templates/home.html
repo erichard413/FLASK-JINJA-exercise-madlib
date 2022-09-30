@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+</head>
+<body>
+    <h1>Madlibs</h1>
+    <form action="/story">
+        {% for prompt in prompts %}
+        <p>{{prompt}}</p>
+        <input name="{{ prompt }}">
+        </p>
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+    <!-- <form action="/story">
+        <label for="place">place</label>
+        <input type="text" placeholder="place" name="place"></li>
+      
+        <label for="noun">noun</label>
+        <input type="text" placeholder="noun" name="noun">
+        <label for="verb">verb</label>
+        <input type="text" placeholder="verb" name="verb">
+        <label for="adj">adjective</label>
+        <input type="text" placeholder="adjective" name="adj">
+        <label for="plural_noun">plural noun</label>
+        <input type="text" placeholder="plural noun" name="plural_noun">
+        <button>Submit!</button>
+    </form>
+</body> -->
+</html>
